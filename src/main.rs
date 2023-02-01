@@ -5,8 +5,10 @@ fn main() {
     let stdout = stdout();
     //let message = String::from("Hello fellow Rustaceans!");
     
+    
     let message = "Hello, welcome to IDS721!";
     let width = message.chars().count();
+
 
     let mut writer = BufWriter::new(stdout.lock());
     say(message, width, &mut writer).unwrap();
